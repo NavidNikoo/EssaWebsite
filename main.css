@@ -1,0 +1,17 @@
+body{
+background:pink;
+font-family: Arial;
+
+}
+
+h3
+{
+    color: beige;
+}
+
+p
+{
+    background: powderblue;
+    color: black;
+    padding: 05px;
+}
