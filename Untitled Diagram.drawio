@@ -1,20 +1,26 @@
-<mxfile host="app.diagrams.net" modified="2023-07-25T23:41:23.984Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="84_ydrItwFFF2rOlgJcY" version="21.6.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-07-25T23:57:43.598Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="JVzZSZcCTU2bPSltD85j" version="21.6.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1026" dy="692" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1026" dy="664" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="lL2YaHl6fkERElptl91N-4" value="Shape" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="330" y="230" width="160" height="134" as="geometry" />
+          <mxGeometry x="321" y="230" width="250" height="460" as="geometry" />
         </mxCell>
         <mxCell id="lL2YaHl6fkERElptl91N-5" value="- qpainter : Qpainter*&lt;br&gt;- id : int&lt;br&gt;- shape : shapeType&lt;br&gt;- pen : QPen&lt;br&gt;- brush : QBrush" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lL2YaHl6fkERElptl91N-4">
-          <mxGeometry y="26" width="160" height="74" as="geometry" />
+          <mxGeometry y="26" width="250" height="74" as="geometry" />
         </mxCell>
         <mxCell id="lL2YaHl6fkERElptl91N-6" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="lL2YaHl6fkERElptl91N-4">
-          <mxGeometry y="100" width="160" height="8" as="geometry" />
+          <mxGeometry y="100" width="250" height="8" as="geometry" />
         </mxCell>
-        <mxCell id="lL2YaHl6fkERElptl91N-7" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lL2YaHl6fkERElptl91N-4">
-          <mxGeometry y="108" width="160" height="26" as="geometry" />
+        <mxCell id="lL2YaHl6fkERElptl91N-7" value="&amp;nbsp;&amp;lt;&amp;lt;enumeration class&amp;gt;&amp;gt;&lt;br&gt;ShapeType&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+NoShape, Line, PolyLine, Polygon, Rectangle, Ellipse, Text&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;lt;&amp;lt;destructor&amp;gt;&amp;gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ ~Shape(){}&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ getID() const : int&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ get_shape() const : shapeType&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ const get_pen() const : QPen&amp;amp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ const get_brush() const : QBrush&amp;amp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ set_shape(const int &amp;amp;inID) : void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ set_pen(parameter::QT) : void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ set_brush(parameter::QT) : void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ set_shapeID(const int &amp;amp;inID) : void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ set_qPainter(QPainter, qpainter) : void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ default_style() : void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ draw_rect(width, length : int) : void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ draw() : virtual void&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ perimeter() const : virtual double&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;+ area() const : virtual double&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;#&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="lL2YaHl6fkERElptl91N-4">
+          <mxGeometry y="108" width="250" height="352" as="geometry" />
+        </mxCell>
+        <mxCell id="lL2YaHl6fkERElptl91N-9" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="lL2YaHl6fkERElptl91N-4" target="lL2YaHl6fkERElptl91N-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="420" as="sourcePoint" />
+            <mxPoint x="50" y="370" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
